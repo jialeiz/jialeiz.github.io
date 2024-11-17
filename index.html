@@ -3,21 +3,36 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Home Page</title>
     <meta name="keywords" content="CV, professional, IT, fashion, design, art, tourism, business">
     <meta name="description" content="This is a website about me, my skills, my education, and my working experience">
-    <button class="button-60" role="button">Button 60</button>
 </head>
 
 <body>
-    <nav>
+    <div class="hamburger" onclick="toggleMenu()">
+        <div class="line"></div> 
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <nav class="menu">
         <a href="index.html">Home Page</a> 
         <a href="Me.html">About Me</a> 
-        <a href="experience.html">Experience&Skills</a>
+        <a href="experience.html">Experience & Skills</a>
     </nav>
+
     <h1>Jialei Zhang</h1>
+
 </body>
+
+<script>
+    function toggleMenu() {
+        const menu = document.querySelector('.menu');
+        menu.classList.toggle('active');
+    }
+</script>
+
 </html>
 
