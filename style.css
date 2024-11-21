@@ -3,9 +3,49 @@ body {
 }
 
 h1 {
-    font-family: serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     text-shadow: 1px 1px white;
     color: rgb(87, 72, 58);
+}
+
+p {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: #cbc2b5;
+  font-style: oblique;
+}
+
+.container {
+  display: flex; 
+  align-items: stretch; 
+}
+
+.profile-img .background-content {
+  margin: 0; 
+  padding: 0;
+  border: none;
+}
+
+.profile-img {
+  max-width: 100%; 
+  width: 300px;
+}
+
+.background-content {
+  width: 100%; 
+  max-width: 300px; 
+  background-color: white;
+  padding: 50px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column; 
+}
+
+.nav-links a {
+  margin-bottom: 20px; 
+  text-decoration: underline;
+  color: #c7c2b5; 
 }
 
 .header {
@@ -52,6 +92,18 @@ h1 {
   font-size: 18px;
 }
 
-.menu a:hover {
-  color: #4CAF50;
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px; 
+  margin-top: 20px;
 }
+
+.social-links a img {
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover img {
+  transform: scale(1.1); 
+}
+
