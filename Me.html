@@ -11,47 +11,74 @@
     </head>
 
     <body>
-        <header class="header">
-            <div class="hamburger" onclick="toggleMenu()">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-        </header>
-    
-        <nav class="menu">
-            <a href="index.html">Home Page</a> 
-            <a href="Me.html">About Me</a> 
+        <div class="nav-container1">
+        <nav class="nav-links1">
+            <a href="Index.html">Home Page</a>
             <a href="experience.html">Experience & Skills</a>
-        </nav>
-        
+        </nav> 
+        </div>
         <h2>About Me</h2>
 
-        <div class="education-container">
+        <div class="education-container">   
             <h3 class="section-title">Education Background</h3>
             <div class="background-content1">
-                <div class="education-item">
-                    <h4>Bachelor of Business Information Technology</h4>
-                    <p>University of Applied Sciences | 2024-2027</p>
-                </div>
-                <div class="education-item">
-                    <h4>Master of English Studies</h4>
-                    <p>University of Helsinki | 2020-2022</p>
-                </div>
-                <div class="education-item">
-                    <h4>Bachelor of English Studies</h4>
-                    <p>Shanghai University of Electric Power | 2015-2019</p>
-                </div>
-                <div class="language-item">
-                    <h3>Languages:</h3>
-                    <ul>
-                        <li>Chinese (Native Speaker)</li>
-                        <li>English (Working Perfessional)</li>
-                        <li>Finnish (A1)</li>
-                        <li>French (A2)</li>
-                    </ul>
-                </div>
-            </div>
+                <table class="education-table">
+                    <thead>
+                        <tr>
+                            <th>Degree</th>
+                            <th>Institution</th>
+                            <th>Duration</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Bachelor of Business Information Technology</td>
+                            <td>Haaga-Helia University of Applied Sciences</td>
+                            <td>2024-2027</td>
+                        </tr>
+                        <tr>
+                            <td>Master of English Studies</td>
+                            <td>University of Helsinki</td>
+                            <td>2020-2022</td>
+                        </tr>
+                        <tr>
+                            <td>Bachelor of English Studies</td>
+                            <td>Shanghai University of Electric Power</td>
+                            <td>2015-2019</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="language-container">
+                    <h3 class="section-title">Language Skills</h3>
+                    <table class="language-table">
+                        <thead>
+                            <tr>
+                                <th>Language</th>
+                                <th>Proficiency</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Chinese</td>
+                                <td>Native Speaker</td>
+                            </tr>
+                            <tr>
+                                <td>English</td>
+                                <td>Working Professional</td>
+                            </tr>
+                            <tr>
+                                <td>Finnish</td>
+                                <td>A1</td>
+                            </tr>
+                            <tr>
+                                <td>French</td>
+                                <td>A2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>                
+          
             <div class="downloadCV">
                 <h4>Please download my CV here:</h4>
                 <a href="path/to/CV_JialeiZhang.pdf" download="CV_JialeiZhang.pdf">
