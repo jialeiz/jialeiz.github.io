@@ -31,7 +31,7 @@ h3{
 h4{
    font-family:Georgia, 'Times New Roman', Times, serif;
    text-shadow: 1px 1px white;
-   color:#ab9f8d;;
+   color:#ab9f8d;
 }
 p {
   font-family:Georgia, 'Times New Roman', Times, serif;
@@ -107,7 +107,7 @@ li {
   border: 0; 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .container {
       flex-direction: column; 
       padding: 10px;
@@ -154,6 +154,9 @@ li {
 
 .education-table th,
 .education-table td {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  text-shadow: 1px 1px white;
+  color:#333;
   padding: 10px;
   border: 1px solid #ddd;
   text-align: left;
@@ -172,7 +175,7 @@ li {
   background-color: #e0e0e0;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .education-table th, .education-table td {
       font-size: 0.9rem;
       padding: 8px;
@@ -205,6 +208,9 @@ li {
 
 .language-table th,
 .language-table td {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  text-shadow: 1px 1px white;
+  color:#333;
   padding: 10px;
   border: 1px solid #ddd;
   text-align: left;
@@ -223,7 +229,7 @@ li {
   background-color: #e0e0e0;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .language-table th, .language-table td {
       font-size: 0.9rem;
       padding: 8px;
@@ -260,7 +266,7 @@ li {
   color: #0056b3;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .nav-links1 {
     flex-wrap: wrap; 
     justify-content: center; 
@@ -291,7 +297,7 @@ li {
   transition: transform 0.3s ease; 
 }
 
-@media (max-width: 900px) {
+@media (max-width: 480px) {
   .education-container {
     max-width: 100%;
     padding: 15px;
@@ -302,7 +308,7 @@ li {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .education-container .section-title {
     font-size: 1.5rem;
   }
@@ -320,6 +326,7 @@ li {
 
 /* Experience & skills page */
 .work-container {
+  position: relative;
   max-width: 900px; 
   margin: 30px auto; 
   padding: 20px;
@@ -365,13 +372,25 @@ li {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .work-container .background-content2 {
       grid-template-columns: 1fr; 
   }
 }
 
+.work-icon {
+  position: absolute; 
+  bottom: 20px; 
+  right: 20px; 
+  width: 150px; 
+  height: auto; 
+}
 
+@media (max-width: 480px) {
+  .work-icon {
+    width: 30px; 
+  }
+}
 
 .social-links {
   display: flex;
@@ -386,19 +405,6 @@ li {
 
 .social-links a:hover img {
   transform: scale(1.1); 
-}
-
-
-@media (max-width: 768px) {
-  .social-links {
-    gap: 20px; 
-    justify-content: center;  
-  }
-
-  .social-links a img {
-    width: 30px;
-    height: 30px;
-  }
 }
 
 @media (max-width: 480px) {
