@@ -285,16 +285,34 @@ li {
   gap: 10px; 
 }
 
-.downloadCV h4 {
-  margin: 0;
-  font-size: 18px; 
-  color: #333; 
+.download-button {
+  background-color: #333; 
+  color: white; 
+  font-size: 16px; 
+  padding: 10px 20px; 
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer;
+  text-align: center; 
+  text-decoration: none;
+}
+
+.download-button:hover {
+  background-color: #0056b3; 
 }
 
 .download-icon {
   width: 40px; 
   height: auto; 
   transition: transform 0.3s ease; 
+}
+
+@media screen and (max-width: 480px) {
+  .download-button {
+      font-size: 14px; 
+      padding: 8px 16px; 
+      width: 100%; 
+  }
 }
 
 @media (max-width: 480px) {
